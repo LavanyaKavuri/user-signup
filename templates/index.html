@@ -1,0 +1,50 @@
+<!doctype html>
+ <html>
+    
+    
+       <head>
+       <style>
+        .error { color: red; }
+    </style>
+       <h1> SignUp </h1>
+       
+        </head>
+    <body>
+        <form action="/user_signup" method ="POST" >
+         <table>
+           <tr> 
+               
+         <td><label> Username
+         <input name="user" type="text" value='{{user}}' />
+         </label></td>
+        <td><p class="error">{{user_error}}</p></td>
+        
+        </tr>
+          <tr>      
+         <td><label> Password
+        <input name="pwd" type="Password" value='{{pwd}}' />
+         </label></td><br>
+         <td><p class="error">{{pwd_error}}</p></td>
+
+        <tr>
+          <td><label> Confirm Password
+         <input name="cpwd" type="Password" value='{{cpwd}}' />
+         </label></td><br>
+        <td>
+         <p class="error">{{cpwd_error}}</p></td>
+        </tr>
+         <tr>
+         <td><label> Email
+         <input name="email" type="text" value='{{email}}' />
+         </label></td><br>
+         <td><p class="error">{{email_error}}</p></td>
+        </tr>
+        <tr>
+            <td>
+         <input type="Submit" value="Submit"/></td>
+        </tr>
+        </table>
+        </form>
+
+    </body>
+ </html>
