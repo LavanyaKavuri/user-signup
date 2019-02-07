@@ -33,9 +33,9 @@ def isalpha(str):
         return 1    
 def emailalpha(str) :
     if str == '@' or str == '.' or str== ' ':
-        return 1
+        return 0
     else:
-        return 0 
+        return 1 
 
 
 @app.route("/user_signup", methods=['POST'])
