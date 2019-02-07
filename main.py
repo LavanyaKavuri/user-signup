@@ -64,7 +64,7 @@ def name1():
 
    if  cpwd != pwd or not isEmp(cpwd):
        cpwd_error= "The password and the confirm password did not match"
-   if   emailalpha(user) or len(email) > 20 or len(email) < 3:
+   if   emailalpha(email) or len(email) > 20 or len(email) < 3:
        email_error ="Please enter a valid email"
    if not   email_error and not  user_error and not  pwd_error and not  cpwd_error:
        return render_template('final_output.html', user=user)
